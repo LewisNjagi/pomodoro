@@ -1,1 +1,42 @@
-<h1>Hello World</h1>
+{% extends 'base.html' %}
+
+{% block styles %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <br>
+    <h1 class="head">POMODORO</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <p class="text">
+                The Pomodoro Technique is a popular time-management method invented by Italian Francesco Cirillo. He
+                wrote, “I discovered that you could learn how to improve your effectiveness and be better able to
+                estimate how long a task will take to complete by recording how you utilizs your time.”
+            </p>
+        </div>
+        <div class="col-md-8">
+            <img class="image" src="../static/img/2650452.jpg" alt="">
+        </div>
+    </div>
+    <h6 style="text-align: center; font-size: 30px; font-family: 'Libre Franklin', sans-serif;">The technique is popular, perhaps because it’s portable and easy to
+        learn.</h6>
+    <div class="row">
+        <ul class="pom">
+            <li style="font-family: 'Libre Franklin', sans-serif;">Pick one project or task you want to focus on.</li>
+            <li style="font-family: 'Libre Franklin', sans-serif;">Set a timer for 25-30 minutes, and get to work.</li>
+            <li style="font-family: 'Libre Franklin', sans-serif;">When the buzzer sounds, take a two-to-three-minute break.</li>
+            <li style="font-family: 'Libre Franklin', sans-serif;">Repeat.</li>
+            <li style="font-family: 'Libre Franklin', sans-serif;">After four sessions, take a longer break.</li>
+            <li style="font-family: 'Libre Franklin', sans-serif;">Record each session with a tick or X in your notebook</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
