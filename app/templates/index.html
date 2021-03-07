@@ -13,6 +13,14 @@
 {% block content %}
 <div class="container">
     <br>
+    <p id="countdown" style="color: black;">25:00</p>
+    <button type="button" id="call" class="btn btn-light">Start Work Time</button>
+    <!-- <button type="button" id="call" class="btn btn-light">Stop Work Time</button> -->
+    <p id="demo">5</p>
+    <button onclick="clock(); document.getElementById('demo').innerHTML='5';">Start counter</button>
+    <button onclick="clearInterval(myTimer);">Stop counter</button>
+    <!-- <p id="countdownfive" style="color: black;">5:00</p> -->
+    <!-- <button type="button" id="callfive" class="btn btn-light">Start Break Time</button> -->
     <h1 class="head">POMODORO</h1>
     <div class="row">
         <div class="col-md-4">
@@ -26,17 +34,25 @@
             <img class="image" src="../static/img/2650452.jpg" alt="">
         </div>
     </div>
-    <h6 style="text-align: center; font-size: 30px; font-family: 'Libre Franklin', sans-serif;">The technique is popular, perhaps because it’s portable and easy to
+    <h6 style="text-align: center; font-size: 30px; font-family: 'Libre Franklin', sans-serif;">The technique is
+        popular, perhaps because it’s portable and easy to
         learn.</h6>
     <div class="row">
         <ul class="pom">
-            <li style="font-family: 'Libre Franklin', sans-serif;">Pick one project or task you want to focus on.</li>
-            <li style="font-family: 'Libre Franklin', sans-serif;">Set a timer for 25-30 minutes, and get to work.</li>
-            <li style="font-family: 'Libre Franklin', sans-serif;">When the buzzer sounds, take a two-to-three-minute break.</li>
+            <li style="font-family: 'Libre Franklin', sans-serif;">Pick one project or task you want to focus on.
+            </li>
+            <li style="font-family: 'Libre Franklin', sans-serif;">Set a timer for 25-30 minutes, and get to work.
+            </li>
+            <li style="font-family: 'Libre Franklin', sans-serif;">When the buzzer sounds, take a
+                two-to-three-minute
+                break.</li>
             <li style="font-family: 'Libre Franklin', sans-serif;">Repeat.</li>
             <li style="font-family: 'Libre Franklin', sans-serif;">After four sessions, take a longer break.</li>
-            <li style="font-family: 'Libre Franklin', sans-serif;">Record each session with a tick or X in your notebook</li>
+            <li style="font-family: 'Libre Franklin', sans-serif;">Record each session with a tick or X in your
+                notebook
+            </li>
         </ul>
     </div>
 </div>
+<script src="../static/js/script.js"></script>
 {% endblock %}
