@@ -13,12 +13,11 @@
 {% block content %}
 <div class="container">
     <br>
-    <p id="countdown" style="color: black;">25:00</p>
-    <button type="button" id="call" class="btn btn-light">Start Work Time</button>
+    
     <!-- <button type="button" id="call" class="btn btn-light">Stop Work Time</button> -->
-    <p id="demo">5</p>
-    <button onclick="clock(); document.getElementById('demo').innerHTML='5';">Start counter</button>
-    <button onclick="clearInterval(myTimer);">Stop counter</button>
+    <!-- <p id="demo">5</p> -->
+    <!-- <button onclick="clock(); document.getElementById('demo').innerHTML='5';">Start counter</button>
+    <button onclick="clearInterval(myTimer);">Stop counter</button> -->
     <!-- <p id="countdownfive" style="color: black;">5:00</p> -->
     <!-- <button type="button" id="callfive" class="btn btn-light">Start Break Time</button> -->
     <h1 class="head">POMODORO</h1>
@@ -52,6 +51,12 @@
                 notebook
             </li>
         </ul>
+    </div>
+    <div class="container" style="text-align: center;">
+        <p id="countdown" style="color: black; font-size: 80px;">25:00</p>
+    <button type="button" id="call" class="btn btn-dark" style="margin-bottom: 100px;">Start Work Time</button>
+    <p id="countdownfive" style="color: black; font-size: 80px;">5:00</p>
+    <button type="button" id="callfive" class="btn btn-dark" style="margin-bottom: 100px;">Start Break Time</button>
     </div>
 </div>
 <script src="../static/js/script.js"></script>
