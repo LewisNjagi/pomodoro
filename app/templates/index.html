@@ -55,9 +55,60 @@
     <div class="container" style="text-align: center;">
         <p id="countdown" style="color: black; font-size: 80px;">25:00</p>
     <button type="button" id="call" class="btn btn-dark" style="margin-bottom: 100px;">Start Work Time</button>
+    
+    <form>
+        <div class="form-group">
+            <label for="task">What is your task today?</label>
+            <input type="text" id="txtVal" class="form-control" placeholder="enter task to complete">
+            
+            <div >
+                <ul id="list">
+                    
+                </ul>
+            </div>
+          </div>
+          <button onclick="addLi()" type="submit" class="btn btn-primary">Submit</button>
+        
+          
+        
+        
+        </form>
+
+        <script>
+            function addLi(){
+                var txtVal = document.getElementById("txtVal").value
+                
+                    listNode = document.getElementById("list")
+                    liNode = document.createElement("li")
+                    txtNode = document.createTextNode(txtVal)
+                    alert(txtNode)
+
+              liNode.appendChild(txtNode)
+              listNode.appendChild(liNode)
+            }
+
+        </script>
+        <!-- <script>
+            function addLi(){
+            var txtVal = document.getElementById("txtVal").value
+            document.getElementById("lis").innerHTML =txtVal
+            console.log(txtVal)
+            }
+        </script> -->
+
     <p id="countdownfive" style="color: black; font-size: 80px;">5:00</p>
     <button type="button" id="callfive" class="btn btn-dark" style="margin-bottom: 100px;">Start Break Time</button>
-    </div>
+    
+    <!-- <form action="">
+    <div class="form-group">
+        <label for="task">What do you want to do in your break time?</label>
+        <input type="task" class="form-control" placeholder="breakchores" id="task">
+      </div> -->
+              
+      <!-- <button onclick="addLi" type="submit" class="btn btn-primary">Submit</button> -->
+
+    <!-- </form> -->
+</div>
 </div>
 <script src="../static/js/script.js"></script>
 {% endblock %}
