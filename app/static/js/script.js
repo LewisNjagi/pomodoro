@@ -48,3 +48,24 @@ document.getElementById("callfive").addEventListener("click", function () {
 //         }
 //     }
 // }
+// var inputElement = document.getElementById('task');
+// inputElement.type = "button"
+// inputElement.addEventListener('click', function(){
+//     getTask("");
+// });
+
+// ​document.append(".list");​
+
+function addLi(){
+    var txtVal = getElementById("txtVal").value
+    console.log(txtVal)
+    console.log("Hello world!");
+    
+    // document.getElementById("list").innerHTML = `<li>{}</li>`
+//         listNode = document.getElementById("task"),
+//         liNode = document.createElement("li"),
+//         txtNode = document.createTextNode(txtVal);
+
+//   liNode.appendChild(txtNode);
+//   listNode.appendChild(liNode);
+}
