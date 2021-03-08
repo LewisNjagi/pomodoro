@@ -52,7 +52,7 @@
             </li>
         </ul>
     </div>
-    <div class="container" style="text-align: center;">
+    <div class="container" id="timer" style="text-align: center; " >
         <p id="countdown" style="color: black; font-size: 80px;">25:00</p>
     <button type="button" id="call" class="btn btn-dark" style="margin-bottom: 100px;">Start Work Time</button>
     
@@ -86,6 +86,7 @@
               liNode.appendChild(txtNode)
               listNode.appendChild(liNode)
             }
+            
 
         </script>
         <!-- <script>
@@ -99,16 +100,17 @@
     <p id="countdownfive" style="color: black; font-size: 80px;">5:00</p>
     <button type="button" id="callfive" class="btn btn-dark" style="margin-bottom: 100px;">Start Break Time</button>
     
-    <!-- <form action="">
+    <form action="">
     <div class="form-group">
         <label for="task">What do you want to do in your break time?</label>
         <input type="task" class="form-control" placeholder="breakchores" id="task">
-      </div> -->
+      </div>
               
-      <!-- <button onclick="addLi" type="submit" class="btn btn-primary">Submit</button> -->
+      <button onclick="addLi" type="submit" class="btn btn-primary">Submit</button>
 
-    <!-- </form> -->
+    </form>
 </div>
 </div>
 <script src="../static/js/script.js"></script>
 {% endblock %}
+<br><br><br>
